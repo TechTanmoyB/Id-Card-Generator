@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+            <div class="inputCard">
+                <h2>Id Card</h2>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
+                <input type="date" id="dob" required>
+                <textarea id="address1" placeholder="Enter Place"></textarea>
+                <textarea id="address2" placeholder="Enter State"></textarea>
+                <input type="file" id="photo" accept="image/*" required>
+                <button onclick="generateCard()">Generate Identity Card</button>
+            </div>
+
+            <div id="arrow" class="arrow hidden">⇌</div>
+
+            <div class="outputCard hidden">
+                <img id="outputPhoto" alt="User Photo">
+                <h2 id="outputName"></h2>
+                <p id="outputMobile"></p>
+                <p id="outputDob"></p>
+                <p id="outputAddress1"></p>
+                <p id="outputAddress2"></p>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

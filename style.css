@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #1e1e2f;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.inputCard, .outputCard {
+    background-color: #282834;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.inputCard h2, .outputCard h2 {
+    margin-bottom: 1rem;
+    color: burlywood;
+}
+
+.inputCard input, .inputCard textarea, .inputCard button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1.25rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+}
+
+.inputCard button {
+    background-color: #f0a500;
+    color: #2d2d3a;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #f0a500;
+}
+
+.hidden {
+    display: none;
+}
+
+.outputCard img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .arrow {
+        display: block;
+        font-size: 2.5rem;
+    }
+}
